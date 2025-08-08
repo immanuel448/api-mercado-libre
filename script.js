@@ -1,5 +1,6 @@
 // Esperamos que el DOM esté listo
 document.addEventListener("DOMContentLoaded", () => {
+    //se crean constantes de elementos del html
   const formulario = document.getElementById("formulario");
   const input = document.getElementById("busqueda");
   const resultado = document.getElementById("resultado");
