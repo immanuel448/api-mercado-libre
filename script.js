@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
       // Hacemos la petición HTTP GET a la API pública de Mercado Libre
       // encodeURIComponent(query) evita problemas con espacios o caracteres especiales en la URL
       // "await" es como en C#: espera a que termine la tarea pero sin bloquear la interfaz
-      const respuesta = await fetch(`https://api.mercadolibre.com/sites/MLM/search?q=${encodeURIComponent(query)}`);
+      const respuesta = await fetch(`buscar.php?query=${encodeURIComponent(query)}`);
+
 
       // Convertimos la respuesta en un objeto JSON (en C# sería como deserializar con JsonConvert)
       const datos = await respuesta.json();
